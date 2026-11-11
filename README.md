@@ -196,3 +196,4 @@ For implementation, deployment, design customization, or integration support, co
 ## Repository note
 
 This project is intentionally structured for a public GitHub release while remaining safe for demo-mode development until Supabase, Vercel, and production credentials are explicitly authorized.
+
