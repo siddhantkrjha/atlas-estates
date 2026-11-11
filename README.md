@@ -94,6 +94,26 @@ Demo limitation: Features that appear interactive in the demo do not necessarily
 
 Screenshots
 
+<img width="1880" height="922" alt="Screenshot 2026-11-11 221831" src="https://github.com/user-attachments/assets/4ac47339-fee0-4b8b-afea-b8eb0bb89d64" />
+
+<img width="1862" height="852" alt="Screenshot 2026-11-11 222106" src="https://github.com/user-attachments/assets/21e60500-0403-442f-a027-3aa1bf7f570c" />
+
+<img width="1860" height="907" alt="Screenshot 2026-11-11 222043" src="https://github.com/user-attachments/assets/85a00cb6-ae0e-406e-a772-974bef57bcb3" />
+
+<img width="1870" height="657" alt="Screenshot 2026-11-11 222134" src="https://github.com/user-attachments/assets/40ff2c12-bec7-4977-b935-f8aea20bf02a" />
+
+<img width="1857" height="886" alt="Screenshot 2026-11-11 222144" src="https://github.com/user-attachments/assets/4afa4a26-2b02-489c-acd6-fd6314235bd9" />
+
+<img width="1860" height="882" alt="Screenshot 2026-11-11 222152" src="https://github.com/user-attachments/assets/71aebc8e-e5ab-4d7e-820b-72f2073c01be" />
+
+<img width="1877" height="877" alt="Screenshot 2026-11-11 222315" src="https://github.com/user-attachments/assets/d9b6e6bf-46f0-4b89-8bc0-8fb3efaaf376" />
+
+<img width="1867" height="905" alt="Screenshot 2026-11-11 222324" src="https://github.com/user-attachments/assets/5c6412f1-6e70-442c-a427-a5d49bac1828" />
+
+<img width="1872" height="917" alt="Screenshot 2026-11-11 222306" src="https://github.com/user-attachments/assets/8caad1d0-d6d7-4c26-bc9e-c481ed899192" />
+
+<img width="1872" height="896" alt="Screenshot 2026-11-11 222257" src="https://github.com/user-attachments/assets/8a58973b-f035-4524-ba03-179a35a72473" />
+
 Screenshots have not yet been added to this repository.
 
 Screenshots can be stored in either:
