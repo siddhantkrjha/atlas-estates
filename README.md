@@ -1,128 +1,361 @@
-# Atlas Estates
+Atlas Estates
 
-Atlas Estates is a premium luxury real estate web application built with React, Vite, and TypeScript. It is designed for real-estate agencies, brokers, and consultants who want a polished digital front-end for showcasing premium listings, neighborhoods, agents, and valuation workflows.
+A premium luxury real estate web application built for modern property agencies, brokers, and real estate consultants.
 
-Repository: https://github.com/siddhantkrjha/atlas-estates
+Atlas Estates is a responsive, multi-page real estate platform designed to showcase premium property listings, agents, neighborhoods, and property-related services through an elegant digital experience.
 
-## Project status
+Built with React, Vite, and TypeScript, the application combines an editorial visual experience with interactive property discovery and a Supabase integration scaffold for potential future backend functionality.
 
-This project is currently in demo mode. It uses realistic sample data and a Supabase-ready architecture, but it does not connect to a live backend or production credentials until those are added and authorized separately.
+<p align="center">
+  <a href="https://atlas-estates-seven.vercel.app/"><strong>Live Demo</strong></a>
+  ·
+  <a href="https://github.com/siddhantkrjha/atlas-estates"><strong>GitHub Repository</strong></a>
+</p>
 
-## Features
+Project Overview
 
-- Luxury editorial landing page and premium brand experience
-- Search, filter, and browse property listings
-- Property detail views with gallery, key facts, and enquiry workflow
-- Saved listings and comparison tools in browser storage
-- Agent directory and neighborhood exploration pages
-- Valuation request flow and market insight content
-- Fully responsive layout with motion-enhanced interactions
-- Supabase integration scaffold for future production configuration
+Atlas Estates is designed for:
 
-## Screenshots
+Luxury real estate agencies
 
-Screenshots have not been added to this repository yet. When available, they should be placed in a `docs/assets/` or `public/screenshots/` folder and linked from this section.
+Independent property brokers
 
-## Tech stack
+Real estate consultants
 
-- React 19
-- Vite
-- TypeScript
-- React Router
-- Framer Motion
-- Leaflet / React Leaflet
-- Supabase JS client
-- Lucide React
+Property developers
 
-## Prerequisites
+Property marketing businesses
 
-- Node.js 18+ recommended
-- npm or pnpm
-- A Supabase project only when you are ready to enable live backend functionality
+Real estate startups
 
-## Local installation
+The project currently operates in demo mode using realistic sample data and browser-based functionality.
 
-```bash
+It does not currently depend on a live Supabase backend, production database, or production authentication credentials.
+
+The Supabase architecture is provided as a starting point for future integration, not as a claim that production backend functionality is already active.
+
+Live Demo
+
+Explore the deployed application:
+
+https://atlas-estates-seven.vercel.app/
+
+The deployed version is intended for demonstration and evaluation. It uses sample property information and should not be treated as a live real estate marketplace or source of verified property information.
+
+Features
+
+Property Discovery
+
+Browse property listings through an interactive interface.
+
+Search and filter available sample properties.
+
+Explore individual property detail pages.
+
+View property galleries, key facts, and features.
+
+Submit enquiries through the demo interface.
+
+Real Estate Experience
+
+Luxury editorial landing page.
+
+Premium visual identity and responsive layouts.
+
+Agent directory and individual agent profiles.
+
+Neighborhood exploration.
+
+Market insight and blog content.
+
+Interactive Tools
+
+Save properties using browser storage.
+
+Compare selected properties.
+
+Explore property valuation request workflows.
+
+Navigate property-related content and services.
+
+Technical Foundation
+
+React-based component architecture.
+
+TypeScript for application development.
+
+Motion-enhanced user interactions.
+
+Supabase integration scaffold.
+
+Vercel deployment configuration.
+
+Demo limitation: Features that appear interactive in the demo do not necessarily represent live transactions, persistent server-side data, authenticated accounts, or operational business workflows.
+
+Screenshots
+
+Screenshots have not yet been added to this repository.
+
+Screenshots can be stored in either:
+
+docs/assets/
+
+or:
+
+public/screenshots/
+
+Once added, update this section with actual screenshots of the deployed application.
+
+Technology Stack
+
+Technology
+
+Purpose
+
+React 19
+
+User interface
+
+Vite
+
+Development server and build tooling
+
+TypeScript
+
+Application development
+
+React Router
+
+Client-side navigation
+
+Framer Motion
+
+Animations and interactions
+
+Leaflet / React Leaflet
+
+Map functionality
+
+Supabase JS
+
+Future backend integration
+
+Lucide React
+
+Icons
+
+Getting Started
+
+Prerequisites
+
+Install the following:
+
+Node.js 18 or later (use a version compatible with the installed project dependencies).
+
+npm or pnpm.
+
+Git (if cloning the repository).
+
+A Supabase project is not required to run the application in demo mode.
+
+1. Clone the Repository
+
+git clone https://github.com/siddhantkrjha/atlas-estates.git
+cd atlas-estates
+
+2. Install Dependencies
+
+Using npm:
+
 npm install
+
+Or using pnpm:
+
+pnpm install
+
+3. Start the Development Server
+
+npm run dev
+
+To expose the development server on the network:
+
 npm run dev -- --host 0.0.0.0
-```
 
-Then open the local preview URL shown by Vite, typically:
+Open the local URL provided by Vite. The default is usually:
 
-```text
 http://localhost:5173
-```
 
-## Environment variables
+4. Build for Production
 
-Copy the sample file and add values only when you are ready to integrate with Supabase.
+npm run build
 
-```bash
+To preview the production build locally:
+
+npm run preview
+
+Check package.json for the actual available scripts before running commands if your project configuration differs.
+
+Environment Variables
+
+Atlas Estates includes a Supabase integration scaffold for future backend configuration.
+
+You do not need Supabase credentials to run the application in demo mode if the current implementation supports that fallback.
+
+If you want to configure Supabase locally, create a .env file using the provided example:
+
 cp .env.example .env
-```
 
-The project expects:
+Configure the following variables with your own project values:
 
-```env
 VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_ANON_KEY=your-anon-key
-```
 
-Do not commit `.env` files or any real credentials. The repository should retain only placeholder values in `.env.example`.
+Security notes:
 
-## Demo mode and sample data
+Never commit .env or .env.local files.
 
-The application intentionally uses sample listings, agents, and neighborhoods. This keeps the app usable without external services while preserving a production-ready integration path.
+Keep .env.example limited to placeholder values.
 
-The demo version is not intended to represent live market data, real transactions, or authenticated production accounts.
+Never expose a Supabase service-role key in frontend code.
 
-## Supabase setup
+Use appropriate database access policies and server-side controls for privileged operations.
 
-The app contains a safe Supabase client wrapper in `src/lib/supabase.ts` and a schema scaffold in `supabase/schema.sql`.
+Treat frontend environment variables as publicly accessible to users of the deployed application.
 
-To enable Supabase later:
+Demo Mode and Sample Data
 
-1. Create a Supabase project in the official Supabase dashboard.
-2. Copy the project URL and anon key into your local `.env` file.
-3. Run the SQL in `supabase/schema.sql` in the Supabase SQL editor.
-4. Review row-level security policies and ensure they match your intended access model.
-5. Confirm that no service-role key is exposed in frontend code.
+The application currently uses sample data to demonstrate its real estate interface and workflows.
 
-## Database schema and migration notes
+This includes sample:
 
-The SQL file includes core tables for:
+Property listings
 
-- profiles
-- locations
-- properties
-- property images
-- agents
-- saved properties
-- enquiries
-- viewing requests
-- valuation requests
-- blog posts
-- site settings
-- property comparisons
+Agent profiles
 
-These tables provide a clear foundation for future live data integration without forcing the current demo experience to depend on a backend.
+Neighborhood information
 
-## Authentication and RLS
+Market insights
 
-The current demo build is intentionally not connected to live authentication. When production auth is enabled, use Supabase Auth and review RLS rules carefully before exposing any data.
+Property-related content
 
-Never place a service-role key or privileged secret in client-facing code. Keep those credentials in a secure backend environment or managed secret store.
+The sample information is illustrative and should not be interpreted as verified real estate inventory, actual market statistics, genuine customer testimonials, or live transaction data.
 
-## Deployment to Vercel
+Some interactions may rely on browser storage or local application state rather than a persistent backend.
 
-A basic `vercel.json` file is included to support SPA routing and frontend security headers. The repository is ready for a Vercel deployment flow when the project owner has authorized the environment variables and production configuration.
+Supabase Integration
 
-Use the official Vercel dashboard workflow and add environment variables through the platform rather than embedding credentials into the app code.
+The project includes a Supabase integration scaffold.
 
-## Project structure
+Relevant files include:
 
-```text
-.
+src/lib/supabase.ts
+supabase/schema.sql
+
+These provide a starting point for future integration with a Supabase project.
+
+Future Configuration
+
+To enable backend functionality:
+
+Create a Supabase project.
+
+Configure the project URL and anon key in your local environment.
+
+Review the SQL schema in supabase/schema.sql.
+
+Apply and test the database schema.
+
+Configure authentication if required.
+
+Review and test Row Level Security (RLS) policies.
+
+Connect application workflows to the appropriate database operations.
+
+Test all functionality before using real business or customer data.
+
+The existence of a schema file does not mean that all application features are already connected to database operations.
+
+Database Schema
+
+The current schema scaffold is intended to support entities such as:
+
+Profiles
+
+Locations
+
+Properties
+
+Property images
+
+Agents
+
+Saved properties
+
+Enquiries
+
+Viewing requests
+
+Valuation requests
+
+Blog posts
+
+Site settings
+
+Property comparisons
+
+Refer to supabase/schema.sql for the actual definitions.
+
+Authentication and Database Security
+
+The current demo version is not connected to production authentication.
+
+If authentication and live database functionality are introduced later:
+
+Use Supabase Auth or an appropriate authentication provider.
+
+Configure and test RLS policies for every relevant table.
+
+Restrict access to sensitive user information.
+
+Validate user input on trusted server-side systems.
+
+Keep privileged credentials outside client-facing code.
+
+Test authorization boundaries before handling real customer data.
+
+Do not assume that a demo interface or database schema alone provides production-grade security.
+
+Deployment
+
+Vercel
+
+Atlas Estates has been deployed to Vercel.
+
+Live application:
+
+https://atlas-estates-seven.vercel.app/
+
+The repository also includes a vercel.json configuration file intended to support deployment behavior such as SPA routing and frontend security headers.
+
+For future deployments:
+
+Import the GitHub repository into Vercel.
+
+Confirm the build command and output directory against the project configuration.
+
+Configure environment variables through Vercel project settings when required.
+
+Deploy the application.
+
+Verify routing, assets, environment configuration, and application functionality after deployment.
+
+A successful frontend deployment does not automatically establish a live backend, production authentication, or operational database.
+
+Project Structure
+
+The following is an overview of the expected project structure. Refer to the actual repository for the complete and current file listing.
+
+atlas-estates/
 ├── public/
 ├── src/
 │   ├── lib/
@@ -141,59 +374,130 @@ Use the official Vercel dashboard workflow and add environment variables through
 ├── tsconfig.json
 ├── vite.config.ts
 └── index.html
-```
 
-## Customization guide
+Customization
 
-- Update branding, colors, and luxury design tokens in the CSS files under `src/`.
-- Replace sample listing data in `src/data.ts` with real property inventory when authorized.
-- Adjust the routes and landing page copy in `src/App.tsx`.
-- Configure Supabase and row-level policies when a production backend is enabled.
+Developers can adapt the application to suit their own real estate business requirements.
 
-## Security considerations
+Examples include:
 
-- Keep all real credentials out of source control.
-- Never commit `.env`, `.env.local`, or secrets.
-- Use placeholder values in `.env.example` only.
-- Keep service-role credentials in a secure environment and avoid exposing them in frontend code.
-- Review all third-party assets and branded files before public release.
+Branding and visual identity
 
-## Known limitations
+Update the application's branding, colors, typography, and design tokens in the relevant CSS files.
 
-- The app currently runs on demo data.
-- No production authentication, payments, or live listing feeds are connected.
-- No real valuation engine or live enquiry delivery is configured yet.
-- Additional deployment and integration work should happen only after explicit authorization.
+Property inventory
 
-## Roadmap
+Replace sample property information in src/data.ts with authorized property information.
 
-- Connect to Supabase for real property data and auth
-- Add production-ready admin workflows
-- Review deployment configuration for Vercel and hosting
-- Expand property management, enquiry handling, and blog publishing
-- Add stronger analytics and monitoring
+Navigation and pages
 
-## Contributing
+Modify the routes, page layouts, and application content in the relevant source files.
 
-Contributions are welcome for documentation, accessibility, performance improvements, and frontend refinements. Please open an issue or submit a pull request with a clear explanation of the intended change.
+Backend integration
 
-The project should remain safe and demo-mode aware until a live backend is configured.
+Configure Supabase and implement the required database operations, authentication, and access policies before handling live data.
 
-## Licensing status
+Business workflows
 
-A public license has not been added to this repository yet while ownership and third-party asset rights are under review. This repository is being prepared for public hosting while preserving the opportunity to confirm the appropriate licensing and asset review before final publication.
+Extend enquiry handling, viewing requests, property management, and valuation functionality as needed.
 
-## Maintainer
+Known Limitations
+
+The current version has the following limitations:
+
+Uses sample property and agent data.
+
+Does not provide a connected production database.
+
+Does not include production authentication.
+
+Does not provide a live property listing feed.
+
+Does not implement a verified real-world property valuation engine.
+
+Does not guarantee delivery of enquiries to a real estate business.
+
+Does not provide verified live transactions or payment processing.
+
+The application should be evaluated as a frontend demonstration and development foundation until the relevant production integrations have been implemented and tested.
+
+Roadmap
+
+Potential future improvements include:
+
+Connect Supabase for persistent property and agent data.
+
+Implement production authentication and authorization.
+
+Develop secure administrative workflows.
+
+Integrate real property inventory and listing management.
+
+Implement operational enquiry and viewing request handling.
+
+Expand property management functionality.
+
+Improve analytics, monitoring, and performance.
+
+Add additional testing and accessibility improvements.
+
+The roadmap represents potential development work, not completed functionality.
+
+Contributing
+
+Contributions are welcome, particularly in the areas of:
+
+Frontend improvements
+
+Accessibility
+
+Performance optimization
+
+Documentation
+
+Bug fixes
+
+UI and UX refinements
+
+To contribute:
+
+Fork the repository.
+
+Create a feature branch.
+
+Make your changes.
+
+Test your changes.
+
+Submit a pull request with a clear explanation.
+
+Please review the repository's contribution guidelines and Code of Conduct before participating, once those files are added.
+
+Licensing
+
+License status: Not yet assigned.
+
+A public open-source license has not been added while the original code ownership and third-party asset rights are being reviewed.
+
+Until a license is added, the source code should not be assumed to be available for unrestricted copying, modification, redistribution, or commercial reuse.
+
+Third-party assets, including photographs, fonts, icons, illustrations, and other resources, may have separate licensing terms.
+
+The appropriate license will be added after the ownership and asset review is complete.
+
+Maintainer
 
 Siddhant Jha
 
 GitHub: https://github.com/siddhantkrjha
 
-## Contact
+Contact and Collaboration
 
-For implementation, deployment, design customization, or integration support, contact the project maintainer through the GitHub profile linked above or use the repository issue tracker for project discussion.
+For project discussions, bug reports, and feature suggestions, please use the GitHub repository's issue tracker.
 
-## Repository note
+For implementation, deployment, design customization, integrations, or other development support, contact the project maintainer through the GitHub profile.
 
-This project is intentionally structured for a public GitHub release while remaining safe for demo-mode development until Supabase, Vercel, and production credentials are explicitly authorized.
+Atlas Estates is an independent real estate web application project maintained by Siddhant Jha.
+
+Built as a demonstration and development foundation for modern luxury real estate experiences.
 
